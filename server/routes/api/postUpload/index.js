@@ -39,7 +39,7 @@ module.exports = async function (fastify, opts) {
   fastify.register(multer.contentParser);
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, path.join(__dirname, "../../../uploads_new/"));
+      // cb(null, path.join(__dirname, "../../../uploads_new/"));
     },
     filename: function (req, file, cb) {
       cb(
